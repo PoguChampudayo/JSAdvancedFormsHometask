@@ -14,7 +14,7 @@ export default class Popover {
     popoverTitle.textContent = 'Popover title';
     const popoverContent = document.createElement('div');
     popoverContent.classList.add('popoverContent');
-    popoverContent.textContent = "You've clicked on this beautiful button, isn't that amazing?";
+    popoverContent.textContent = element.dataset.content;
     popoverElement.appendChild(popoverTitle);
     popoverTitle.insertAdjacentElement('afterend', popoverContent);
 
